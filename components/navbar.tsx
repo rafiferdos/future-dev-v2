@@ -1,3 +1,4 @@
+import { IoPersonAddSharp } from "react-icons/io5";
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -21,10 +22,10 @@ import {
   TwitterIcon,
   GithubIcon,
   DiscordIcon,
-  HeartFilledIcon,
   SearchIcon,
-  Logo,
 } from "@/components/icons";
+import Logo from '@/public/logo.png'
+import Image from "next/image";
 
 export const Navbar = () => {
   const searchInput = (
@@ -40,7 +41,7 @@ export const Navbar = () => {
         </Kbd>
       }
       labelPlacement="outside"
-      placeholder="Search..."
+      placeholder="Search blogs..."
       startContent={
         <SearchIcon className="text-base text-default-400 pointer-events-none flex-shrink-0" />
       }
@@ -53,8 +54,8 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Logo />
-            <p className="font-bold text-inherit">ACME</p>
+            <Image alt="logo" className="w-8 h-8" src={Logo} />
+            <p className="font-bold text-inherit">{siteConfig.name}</p>
           </NextLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
@@ -98,10 +99,10 @@ export const Navbar = () => {
             as={Link}
             className="text-sm font-normal text-default-600 bg-default-100"
             href={siteConfig.links.sponsor}
-            startContent={<HeartFilledIcon className="text-danger" />}
+            startContent={<IoPersonAddSharp className="text-warning text-xl" />}
             variant="flat"
           >
-            Sponsor
+            Register
           </Button>
         </NavbarItem>
       </NavbarContent>

@@ -1,4 +1,9 @@
-import { Fira_Code as FontMono, Inter as FontSans } from "next/font/google";
+import {
+  Fira_Code as FontMono,
+  Inter as FontSans,
+  Roboto as FontRoboto,
+  Playpen_Sans as FontPlaypen,
+} from "next/font/google";
 
 export const fontSans = FontSans({
   subsets: ["latin"],
@@ -8,4 +13,15 @@ export const fontSans = FontSans({
 export const fontMono = FontMono({
   subsets: ["latin"],
   variable: "--font-mono",
+});
+
+export const fontRoboto = FontRoboto({
+  subsets: ["latin"],
+  variable: "--font-roboto",
+  weight: ["100", "300", "400", "500", "700", "900"],
+});
+
+export const fontPlaypen = FontPlaypen({
+  subsets: ["latin"],
+  variable: "--font-playpen",
 });
