@@ -14,6 +14,7 @@ module.exports = {
         mono: ["var(--font-mono)"],
         roboto: [ 'var(--font-roboto)', 'sans-serif' ],
         playpen: [ 'var(--font-playpen)', 'sans-serif' ],
+        siliguri: [ 'var(--font-hind-siliguri)', 'sans-serif' ],
       },
     },
   },

@@ -6,7 +6,7 @@ import clsx from "clsx";
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
-import { fontRoboto } from "@/config/fonts";
+import { fontHindSiliguri, fontRoboto } from "@/config/fonts";
 import { fontPlaypen } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 
@@ -41,6 +41,7 @@ export default function RootLayout({
           "min-h-screen bg-background text-foreground font-roboto antialiased",
           fontRoboto.variable,
           fontPlaypen.variable,
+          fontHindSiliguri.variable
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>

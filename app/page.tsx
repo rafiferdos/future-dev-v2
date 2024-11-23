@@ -6,15 +6,16 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
+import { Button } from "@nextui-org/button";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 font-siliguri">
       <div className="inline-block max-w-xl text-center justify-center">
-        <span className={title()}>Inspire&nbsp;</span>
-        <span className={title({ color: "violet" })}>beautiful&nbsp;</span>
+        <span className={title()}>আপনার সন্তানকে&nbsp;</span>
+        <span className={title({ color: "violet" })}>মেশিন লার্নিং&nbsp;</span>
         <br />
-        <span className={title()}>kids to learn Programming and ML</span>
+        <span className={title()}>শিক্ষা দিন আগামী দিনের জন্য</span>
         <div className={subtitle({ class: "mt-4 font-playpen" })}>
           Make them future-ready with our courses and events.
         </div>
@@ -40,6 +41,7 @@ export default function Home() {
           <GithubIcon size={20} />
           GitHub
         </Link>
+        <Button color="danger" variant="faded">Click me</Button>
       </div>
 
       <div className="mt-8">

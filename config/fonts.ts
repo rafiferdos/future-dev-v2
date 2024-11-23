@@ -3,6 +3,7 @@ import {
   Inter as FontSans,
   Roboto as FontRoboto,
   Playpen_Sans as FontPlaypen,
+  Hind_Siliguri as FontHindSiliguri,
 } from "next/font/google";
 
 export const fontSans = FontSans({
@@ -24,4 +25,10 @@ export const fontRoboto = FontRoboto({
 export const fontPlaypen = FontPlaypen({
   subsets: ["latin"],
   variable: "--font-playpen",
+});
+
+export const fontHindSiliguri = FontHindSiliguri({
+  subsets: ["latin"],
+  variable: "--font-hind-siliguri",
+  weight: ["300", "400", "500", "600", "700"],
 });
