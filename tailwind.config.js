@@ -17,6 +17,7 @@ module.exports = {
         siliguri: [ 'var(--font-hind-siliguri)', 'sans-serif' ],
       },
     },
+    
   },
   darkMode: 'class',
   plugins: [nextui()],
