@@ -23,8 +23,8 @@ const Educators: React.FC = () => {
   return (
     <div className="mt-96 md:mt-24">
       <div>
-        <small className="text-white">The Team</small>
-        <h2 className="mb-5 mt-2 font-extrabold text-white text-5xl">
+        <small className="">The Team</small>
+        <h2 className="mb-5 mt-2 font-extrabold  text-5xl">
           Our Educators
         </h2>
       </div>
@@ -65,7 +65,7 @@ const Educators: React.FC = () => {
         {educatorsData?.length > 0 &&
           educatorsData.map((user: Educator, index: number) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col bg-primary text-white border-2 w-full justify-center mx-auto p-6 shadow-md rounded-xl sm:px-12">
+              <div className="flex flex-col   border-2 w-full justify-center mx-auto p-6 shadow-md rounded-xl sm:px-12">
                 <Image
                   src={user.imageURL}
                   alt={`${user.name}'s profile`}
@@ -75,7 +75,7 @@ const Educators: React.FC = () => {
                 />
                 <div className="space-y-4 text-center divide-y">
                   <div className="my-2 space-y-3">
-                    <h2 className="text-xl text-white font-semibold sm:text-lg">
+                    <h2 className="text-xl  font-semibold sm:text-lg">
                       {user.name}
                     </h2>
                     <p className="flex items-center justify-center gap-2">
@@ -93,7 +93,7 @@ const Educators: React.FC = () => {
                       rel="noopener noreferrer"
                       href="#"
                       aria-label="GitHub"
-                      className="p-2 rounded-md text-white"
+                      className="p-2 rounded-md "
                     >
                       <svg
                         viewBox="0 0 496 512"
@@ -107,7 +107,7 @@ const Educators: React.FC = () => {
                       rel="noopener noreferrer"
                       href="#"
                       aria-label="Dribble"
-                      className="p-2 rounded-md text-white"
+                      className="p-2 rounded-md "
                     >
                       <svg
                         viewBox="0 0 512 512"
@@ -121,7 +121,7 @@ const Educators: React.FC = () => {
                       rel="noopener noreferrer"
                       href="#"
                       aria-label="Twitter"
-                      className="p-2 rounded-md text-white"
+                      className="p-2 rounded-md "
                     >
                       <svg
                         viewBox="0 0 512 512"
