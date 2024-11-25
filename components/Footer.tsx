@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="px-4 divide-y bg-primary text-[#FFFFFF] py-4 mt-16">
+    <footer className="px-4 divide-y shadow-2xl border-t py-4 mt-16">
       <div className="mx-auto max-w-[1332px] md:px-7 lg:px-2 flex flex-col justify-between py-10 space-y-8 lg:flex-row lg:space-y-0">
         <div className="lg:w-1/3">
           <div className="flex justify-center space-x-3 lg:justify-start">
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 text-[#FFFFFF] font-medium text-sm gap-x-4 gap-y-8 lg:w-2/3 sm:grid-cols-4">
+        <div className="grid grid-cols-2  font-medium text-sm gap-x-4 gap-y-8 lg:w-2/3 sm:grid-cols-4">
           <div className="space-y-3 col-span-2">
             <h3 className="tracking-wide capitalize">Contact us</h3>
             <ul className="space-y-3">
@@ -196,7 +196,7 @@ const Footer: React.FC = () => {
       </div>
       <div className="border-b-2 border-[#13131326]"></div>
       <div className="py-6 text-sm text-center">
-        <p className="text-[#FFFFFF] font-medium">
+        <p className=" font-medium">
           Copyright © {new Date().getFullYear()} - All right reserved by{" "}
           <span className="font-extrabold">Future Dev</span>
         </p>
