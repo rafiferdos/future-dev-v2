@@ -4,8 +4,8 @@ const Testimonials: React.FC = () => {
   return (
     <div className="mt-24">
       <div>
-        <small className="text-primary">Stories of Student</small>
-        <h2 className="mt-2 mb-5 font-extrabold text-primary text-5xl">
+        <small className="">Stories of Student</small>
+        <h2 className="mt-2 mb-5 font-extrabold  text-5xl">
           What student say?
         </h2>
       </div>

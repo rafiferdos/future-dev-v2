@@ -9,6 +9,7 @@ import { GithubIcon } from "@/components/icons";
 import { Button } from "@nextui-org/button";
 import Educators from "@/components/Educators";
 import Testimonials from "@/components/Testimonials/Testimonials";
+import ChooseUsSection from "@/components/ChooseUsSection";
 
 export default function Home() {
   return (
@@ -59,10 +60,13 @@ export default function Home() {
           </Snippet>
         </div>
       </section>
+      {/* Why Choose us */}
+            <ChooseUsSection/>
+
       {/* Our  Educators  */}
       <Educators />
       {/* Testimonials */}
-      <Testimonials/>
+      <Testimonials />
     </div>
   );
 }
