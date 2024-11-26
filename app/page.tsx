@@ -8,6 +8,7 @@ import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import { Button } from "@nextui-org/button";
 import Educators from "@/components/Educators";
+import Testimonials from "@/components/Testimonials/Testimonials";
 
 export default function Home() {
   return (
@@ -58,9 +59,10 @@ export default function Home() {
           </Snippet>
         </div>
       </section>
-
       {/* Our  Educators  */}
       <Educators />
+      {/* Testimonials */}
+      <Testimonials/>
     </div>
   );
 }

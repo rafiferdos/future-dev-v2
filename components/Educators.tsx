@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/bundle";
 import "swiper/css/pagination";
@@ -39,8 +39,8 @@ const Educators: React.FC = () => {
           delay: 5000,
           disableOnInteraction: false,
         }}
-        navigation={true}
-        modules={[Autoplay, Navigation]}
+
+        modules={[Autoplay]}
         loop={true}
         breakpoints={{
           0: {
