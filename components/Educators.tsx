@@ -24,7 +24,7 @@ const Educators: React.FC = () => {
     <div className="mt-96 md:mt-24">
       <div>
         <small className="">The Team</small>
-        <h2 className="mb-5 mt-2 font-extrabold  text-5xl">
+        <h2 className="mb-5 mt-2 font-extrabold text-5xl">
           Our Educators
         </h2>
       </div>
@@ -65,7 +65,7 @@ const Educators: React.FC = () => {
         {educatorsData?.length > 0 &&
           educatorsData.map((user: Educator, index: number) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col   border-2 w-full justify-center mx-auto p-6 shadow-md rounded-xl sm:px-12">
+              <div className="flex flex-col  border border-blue-100 dark:border-blue-950 w-full justify-center mx-auto p-6 shadow-2xl rounded-xl sm:px-12">
                 <Image
                   src={user.imageURL}
                   alt={`${user.name}'s profile`}
@@ -82,7 +82,7 @@ const Educators: React.FC = () => {
                       <MdEmail />
                       {user.email}
                     </p>
-                    <div className="flex items-center justify-center gap-3 bg-[#d9e9fb] mx-auto w-48 text-[#1883fc]">
+                    <div className="flex items-center justify-center gap-3 bg-blue-50 dark:bg-blue-950/80 mx-auto w-48 text-[#1883fc] rounded-lg">
                       <PiCertificateFill />
                       <span>{user.designation}</span>
                     </div>

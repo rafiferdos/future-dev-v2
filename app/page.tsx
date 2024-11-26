@@ -45,7 +45,7 @@ export default function Home() {
             <GithubIcon size={20} />
             GitHub
           </Link>
-          <Button color="danger" variant="faded">
+          <Button color="danger" variant="shadow" radius="full">
             Click me
           </Button>
         </div>
