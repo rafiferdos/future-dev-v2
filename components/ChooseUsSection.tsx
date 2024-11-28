@@ -13,10 +13,10 @@ interface ChooseUsItem {
 const ChooseUsSection: React.FC = () => {
   return (
     <div className="mt-24">
-      <h2 className="text-center mb-5 font-extrabold font-atma text-5xl">
+      <h2 className="text-center mb-5 font-extrabold font-siliguri text-5xl">
         কেন আমাদের বেছে নেবেন?
       </h2>
-      <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-5 gap-0 md:gap-5 lg:gap-10 *:font-atma">
+      <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-5 gap-0 md:gap-5 lg:gap-10">
         {/* Left Section */}
         <div className="flex lg:col-span-3  pl-6 mb-52 md:mb-0 space-y-4 lg:space-y-0 md:px-0 col-span-1 flex-col justify-between">
           <div className="space-y-6">
@@ -29,8 +29,8 @@ const ChooseUsSection: React.FC = () => {
                     alt={`${data.title} Icon`}
                   />
                   <div className=" space-y-1">
-                    <h3 className="font-bold">{data.title}</h3>
-                    <p className="text-[16px]">{data.description}</p>
+                    <h3 className="font-bold font-siliguri">{data.title}</h3>
+                    <p className="sm:text-sm text-medium lg:text-lg font-atma">{data.description}</p>
                   </div>
                 </div>
               ))}
