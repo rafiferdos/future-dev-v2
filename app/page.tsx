@@ -12,6 +12,7 @@ import Testimonials from "@/components/Testimonials/Testimonials";
 import ChooseUsSection from "@/components/ChooseUsSection";
 import ProgramSection from "@/components/ProgramSection";
 import PlatformSection from "@/components/PlatformSection";
+import ServicesSection from "@/components/ServicesSection";
 
 export default function Home() {
   return (
@@ -68,7 +69,10 @@ export default function Home() {
       <ChooseUsSection />
 
       {/*About Our Educational Platform  */}
-      <PlatformSection/>
+      <PlatformSection />
+
+      {/* Explore Our Services */}
+      <ServicesSection/>
 
       {/* Our  Educators  */}
       <Educators />
