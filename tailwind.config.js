@@ -1,24 +1,24 @@
-const { nextui } = require('@nextui-org/theme');
+import { nextui } from "@nextui-org/theme";
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       fontFamily: {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
-        roboto: [ 'var(--font-roboto)', 'sans-serif' ],
-        playpen: [ 'var(--font-playpen)', 'sans-serif' ],
-        siliguri: [ 'var(--font-hind-siliguri)', 'sans-serif' ],
+        roboto: ["var(--font-roboto)", "sans-serif"],
+        playpen: ["var(--font-playpen)", "sans-serif"],
+        siliguri: ["var(--font-hind-siliguri)", "sans-serif"],
+        atma: ["var(--font-atma)", "sans-serif"],
       },
     },
-    
   },
-  darkMode: 'class',
+  darkMode: "class",
   plugins: [nextui()],
 };
