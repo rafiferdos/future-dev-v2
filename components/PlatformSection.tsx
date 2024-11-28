@@ -68,9 +68,9 @@ const PlatformSection: React.FC = () => {
         {data?.length > 0 &&
           data.map((value: Data, index: number) => (
             <div key={index} className="space-y-2">
-              <h4 className="font-extrabold text-5xl">{value.number}</h4>
-              <h5 className="font-extrabold text-xl">{value.title}</h5>
-              <p>{value.description}</p>
+              <h4 className="font-extrabold text-5xl text-success-500 dark:text-success-400">{value.number}</h4>
+              <h5 className="font-extrabold text-xl text-secondary-400 dark:text-secondary-600">{value.title}</h5>
+              <p className="text-warning">{value.description}</p>
             </div>
           ))}
       </div>

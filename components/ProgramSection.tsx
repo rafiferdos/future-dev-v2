@@ -8,7 +8,7 @@ const ProgramSection: React.FC = () => {
     <div className="grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-5 gap-24">
       {/* Left Section */}
       <div className="relative col-span-1 lg:col-span-2">
-        <div className="bg-primary-300 w-[269px] min-h-96 rounded-r-[53px]"></div>
+        <div className="bg-primary-300 dark:bg-primary-50 w-[269px] min-h-96 rounded-r-[53px]"></div>
         <div className="absolute bottom-10">
           <Image
             className="max-w-96"

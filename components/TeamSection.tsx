@@ -4,7 +4,7 @@ import React from 'react'
 
 const TeamSection = () => {
   return (
-    <div className="w-full bg-primary flex justify-between items-center rounded-3xl p-10">
+    <div className="w-full bg-primary-100 dark:bg-primary-50 flex justify-between items-center rounded-3xl p-10">
       <div className='w-2/3'>
         <h2 className="mb-5 font-extrabold  text-5xl">
           Join Our Team
