@@ -11,7 +11,6 @@ import { MdEmail } from "react-icons/md";
 import Link from "next/link";
 import Image from "next/image";
 
-// Define a type for Educator data
 type Educator = {
   imageURL: string;
   name: string;

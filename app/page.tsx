@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
@@ -26,7 +27,7 @@ export default function Home() {
           </span>
           <br />
           <span className={title()}>শিক্ষা দিন আগামী দিনের জন্য</span>
-          <div className={subtitle({ class: "mt-4 font-playpen" })}>
+          <div className={subtitle({ class: "mt-4" })}>
             Make them future-ready with our courses and events.
           </div>
         </div>
