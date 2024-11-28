@@ -4,6 +4,7 @@ import {
   Roboto as FontRoboto,
   Playpen_Sans as FontPlaypen,
   Hind_Siliguri as FontHindSiliguri,
+  Atma as FontAtma,
 } from "next/font/google";
 
 export const fontSans = FontSans({
@@ -32,3 +33,9 @@ export const fontHindSiliguri = FontHindSiliguri({
   variable: "--font-hind-siliguri",
   weight: ["300", "400", "500", "600", "700"],
 });
+
+export const fontAtma = FontAtma({
+  subsets: ["latin", "bengali"  ],
+  variable: "--font-atma",
+  weight: ["300", "400", "500", "600", "700"],
+})
