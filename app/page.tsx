@@ -27,7 +27,7 @@ export default function Home() {
           </span>
           <br />
           <span className={title()}>শিক্ষা দিন আগামী দিনের জন্য</span>
-          <div className={subtitle({ class: "mt-4" })}>
+          <div className={subtitle({ class: "mt-4 font-playpen" })}>
             Make them future-ready with our courses and events.
           </div>
         </div>
