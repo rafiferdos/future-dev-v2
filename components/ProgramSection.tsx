@@ -32,10 +32,10 @@ const ProgramSection: React.FC = () => {
         </div>
         <div className="flex gap-4 items-center">
           <Button color="primary" variant="shadow">
-            Book a FREE Trial Class Today!
+            বিনামূল্যে একটি ক্লাস বুক করুন!
           </Button>
-          <Button color="primary" variant="ghost">
-            Learn more
+          <Button color="primary" variant="light">
+            আরো জানুন
           </Button>
         </div>
       </div>
