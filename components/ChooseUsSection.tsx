@@ -1,12 +1,10 @@
-
 import React from "react";
 import chooseUs from "../lib/chooseUs";
-import FooterImage from "@/public/footer_image.png";
 import chooseUsImage from "@/public/chooseUse.png";
 import Image from "next/image";
 
 interface ChooseUsItem {
-  id:string;
+  id: string;
   icon: string;
   title: string;
   description: string;
@@ -15,10 +13,10 @@ interface ChooseUsItem {
 const ChooseUsSection: React.FC = () => {
   return (
     <div className="mt-24">
-      <h2 className="text-center mb-5 font-extrabold  text-5xl">
-        Why Choose Us
+      <h2 className="text-center mb-5 font-extrabold font-siliguri text-5xl">
+        কেন আমাদের বেছে নেবেন?
       </h2>
-      <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-5 gap-0 md:gap-5 lg:gap-10">
+      <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-5 gap-0 md:gap-5 lg:gap-10 *:font-siliguri">
         {/* Left Section */}
         <div className="flex lg:col-span-3  pl-6 mb-52 md:mb-0 space-y-4 lg:space-y-0 md:px-0 col-span-1 flex-col justify-between">
           <div className="space-y-6">
