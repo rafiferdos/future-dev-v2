@@ -1,11 +1,12 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
-import React from 'react'
+import React from "react";
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
-import { fontHindSiliguri, fontRoboto } from "@/config/fonts";
+import { fontHindSiliguri, fontRoboto, fontAtma
+ } from "@/config/fonts";
 import { fontPlaypen } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 import Footer from "@/components/Footer";
@@ -41,7 +42,8 @@ export default function RootLayout({
           "min-h-screen bg-background text-foreground font-playpen antialiased",
           fontRoboto.variable,
           fontPlaypen.variable,
-          fontHindSiliguri.variable
+          fontHindSiliguri.variable,
+          fontAtma.variable
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
@@ -50,7 +52,7 @@ export default function RootLayout({
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
               {children}
             </main>
-            <Footer/>
+            <Footer />
           </div>
         </Providers>
       </body>
