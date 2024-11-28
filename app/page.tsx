@@ -12,7 +12,7 @@ import Testimonials from "@/components/Testimonials/Testimonials";
 import ChooseUsSection from "@/components/ChooseUsSection";
 import ProgramSection from "@/components/ProgramSection";
 import PlatformSection from "@/components/PlatformSection";
-import ServicesSection from "@/components/ServicesSection";
+import ServicesSection from "@/components/Services/ServicesSection";
 
 export default function Home() {
   return (
