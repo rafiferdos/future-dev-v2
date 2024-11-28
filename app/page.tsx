@@ -11,6 +11,7 @@ import Educators from "@/components/Educators";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import ChooseUsSection from "@/components/ChooseUsSection";
 import ProgramSection from "@/components/ProgramSection";
+import PlatformSection from "@/components/PlatformSection";
 
 export default function Home() {
   return (
@@ -62,9 +63,12 @@ export default function Home() {
         </div>
       </section>
       {/* Program Section */}
-      <ProgramSection/>
+      <ProgramSection />
       {/* Why Choose us */}
       <ChooseUsSection />
+
+      {/*About Our Educational Platform  */}
+      <PlatformSection/>
 
       {/* Our  Educators  */}
       <Educators />
