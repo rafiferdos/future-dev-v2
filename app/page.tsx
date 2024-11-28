@@ -13,6 +13,7 @@ import ChooseUsSection from "@/components/ChooseUsSection";
 import ProgramSection from "@/components/ProgramSection";
 import PlatformSection from "@/components/PlatformSection";
 import ServicesSection from "@/components/Services/ServicesSection";
+import TeamSection from "@/components/TeamSection";
 
 export default function Home() {
   return (
@@ -72,7 +73,10 @@ export default function Home() {
       <PlatformSection />
 
       {/* Explore Our Services */}
-      <ServicesSection/>
+      <ServicesSection />
+
+      {/* Join Our Team */}
+      <TeamSection/>
 
       {/* Our  Educators  */}
       <Educators />
