@@ -10,10 +10,11 @@ import { Button } from "@nextui-org/button";
 import Educators from "@/components/Educators";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import ChooseUsSection from "@/components/ChooseUsSection";
+import ProgramSection from "@/components/ProgramSection";
 
 export default function Home() {
   return (
-    <div className="space-y-16">
+    <div className="space-y-24">
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 font-siliguri">
         <div className="inline-block max-w-xl text-center justify-center">
           <span className={title()}>আপনার সন্তানকে&nbsp;</span>
@@ -60,8 +61,10 @@ export default function Home() {
           </Snippet>
         </div>
       </section>
+      {/* Program Section */}
+      <ProgramSection/>
       {/* Why Choose us */}
-            <ChooseUsSection/>
+      <ChooseUsSection />
 
       {/* Our  Educators  */}
       <Educators />
