@@ -15,6 +15,7 @@ import PlatformSection from "@/components/PlatformSection";
 import ServicesSection from "@/components/Services/ServicesSection";
 import TeamSection from "@/components/TeamSection";
 import BlogSection from "@/components/BlogSection";
+import JoinOurTeamSection from "@/components/JoinOurTeamSection";
 
 export default function Home() {
   return (
@@ -84,7 +85,9 @@ export default function Home() {
       {/* Testimonials */}
       <Testimonials />
       {/*Our Blog Insights */}
-      <BlogSection/>
+      <BlogSection />
+      {/* Join Our Team Section */}
+      <JoinOurTeamSection/>
     </div>
   );
 }
