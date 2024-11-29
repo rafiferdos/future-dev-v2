@@ -17,6 +17,7 @@ import TeamSection from "@/components/TeamSection";
 import BlogSection from "@/components/BlogSection";
 import JoinOurTeamSection from "@/components/JoinOurTeamSection";
 import WorkProcessSection from "@/components/WorkProcessSection/WorkProcessSection";
+import OfferSection from "@/components/OfferSection/OfferSection";
 
 export default function Home() {
   return (
@@ -69,8 +70,13 @@ export default function Home() {
       </section>
       {/* Program Section */}
       <ProgramSection />
+
+
       {/* Why Choose us */}
       <ChooseUsSection />
+
+      {/* Explore our offering */}
+      <OfferSection />
 
       {/*About Our Educational Platform  */}
       <PlatformSection />
@@ -86,10 +92,14 @@ export default function Home() {
 
       {/* Our  Educators  */}
       <Educators />
+
       {/* Testimonials */}
       <Testimonials />
+
       {/*Our Blog Insights */}
       <BlogSection />
+
+      
       {/* Join Our Team Section */}
       <JoinOurTeamSection />
     </div>
