@@ -14,6 +14,8 @@ import ProgramSection from "@/components/ProgramSection";
 import PlatformSection from "@/components/PlatformSection";
 import ServicesSection from "@/components/Services/ServicesSection";
 import TeamSection from "@/components/TeamSection";
+import BlogSection from "@/components/BlogSection";
+import JoinOurTeamSection from "@/components/JoinOurTeamSection";
 
 export default function Home() {
   return (
@@ -76,12 +78,16 @@ export default function Home() {
       <ServicesSection />
 
       {/* Join Our Team */}
-      <TeamSection/>
+      <TeamSection />
 
       {/* Our  Educators  */}
       <Educators />
       {/* Testimonials */}
       <Testimonials />
+      {/*Our Blog Insights */}
+      <BlogSection />
+      {/* Join Our Team Section */}
+      <JoinOurTeamSection/>
     </div>
   );
 }
