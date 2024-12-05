@@ -1,6 +1,6 @@
-import React from "react";
-import { Card, CardHeader, CardBody } from "@nextui-org/card";
 import { Avatar } from "@nextui-org/avatar";
+import { Card, CardBody, CardHeader } from "@nextui-org/card";
+import React from "react";
 
 interface Data {
   id: string;

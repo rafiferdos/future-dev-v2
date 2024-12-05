@@ -1,10 +1,10 @@
-import React from 'react'
-import ProcessCard1 from './ProcessCard1';
-import ProcessCard2 from './ProcessCard2';
-import ProcessCard3 from './ProcessCard3';
-import ProcessCard4 from './ProcessCard4';
+import React from "react";
 import strengthsData from "../../lib/strengthsData";
-import StrengthsCard from './StrengthsCard';
+import ProcessCard1 from "./ProcessCard1";
+import ProcessCard2 from "./ProcessCard2";
+import ProcessCard3 from "./ProcessCard3";
+import ProcessCard4 from "./ProcessCard4";
+import StrengthsCard from "./StrengthsCard";
 // Define a type
 type StrengthsData = {
   id: string;
@@ -49,6 +49,6 @@ const WorkProcessSection = () => {
       </div>
     </div>
   );
-}
+};
 
-export default WorkProcessSection
+export default WorkProcessSection;
