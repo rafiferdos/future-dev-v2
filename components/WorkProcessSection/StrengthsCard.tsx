@@ -1,6 +1,6 @@
-import React from "react";
-import { Card, CardHeader, CardBody } from "@nextui-org/card";
 import { Avatar } from "@nextui-org/avatar";
+import { Card, CardBody, CardHeader } from "@nextui-org/card";
+import React from "react";
 
 interface Data {
   id: string;
@@ -16,7 +16,7 @@ const StrengthsCard: React.FC<{ data: Data }> = ({ data }) => {
     <div className="w-[210px] h-[300px]">
       {" "}
       {/* Fixed width and height */}
-      <Card className="w-full h-full p-5 border border-primary flex flex-col">
+      <Card className="w-full h-full p-5 border border-primary flex flex-col hover:bg-primary-50 hover:cursor-pointer">
         <CardHeader className="flex justify-center">
           <Avatar
             isBordered
