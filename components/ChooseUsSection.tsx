@@ -12,7 +12,7 @@ interface ChooseUsItem {
 
 const ChooseUsSection: React.FC = () => {
   return (
-    <div className="mt-24">
+    <div id="about" className="mt-24">
       <h2 className="text-center mb-5 font-extrabold font-siliguri text-5xl">
         কেন আমাদের বেছে নেবেন?
       </h2>

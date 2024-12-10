@@ -14,7 +14,7 @@ type Blog = {
 
 const BlogSection: React.FC = () => {
   return (
-    <div className="mt-96 md:mt-24">
+    <div id="blog" className="mt-96 md:mt-24">
       <div>
         <small className="">Latest Insights</small>
         <h2 className="mb-5 mt-2 font-extrabold text-3xl lg:text-5xl">

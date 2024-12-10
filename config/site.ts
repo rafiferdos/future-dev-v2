@@ -10,53 +10,53 @@ export const siteConfig = {
     },
     {
       label: "Courses",
-      href: "/courses",
+      href: "#courses",
     },
     {
       label: "About",
-      href: "/about",
+      href: "#about",
     },
     {
       label: "Services",
-      href: "/services",
+      href: "#services",
     },
     {
       label: "Events",
-      href: "/events",
+      href: "#events",
     },
     {
       label: "Blog",
-      href: "/blog",
+      href: "#blog",
     },
   ],
   navMenuItems: [
     {
       label: "Profile",
-      href: "/profile",
+      href: "#profile",
     },
     {
       label: "Dashboard",
-      href: "/dashboard",
+      href: "#dashboard",
     },
     {
       label: "Projects",
-      href: "/projects",
+      href: "#projects",
     },
     {
       label: "Team",
-      href: "/team",
+      href: "#team",
     },
     {
       label: "Calendar",
-      href: "/calendar",
+      href: "#calendar",
     },
     {
       label: "Settings",
-      href: "/settings",
+      href: "#settings",
     },
     {
       label: "Help & Feedback",
-      href: "/help-feedback",
+      href: "#help-feedback",
     },
     {
       label: "Logout",
