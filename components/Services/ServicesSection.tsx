@@ -17,7 +17,7 @@ type ServiceData = {
 
 const ServicesSection: React.FC = () => {
   return (
-    <div>
+    <div id="services">
       <div className="grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-5 gap-24">
         {/* Left Section */}
         <div className="relative col-span-1 lg:col-span-2">
