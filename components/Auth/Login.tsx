@@ -2,14 +2,11 @@
 
 import React from "react";
 
-import {Icon} from "@iconify/react";
-import { Input } from "@nextui-org/input";
-import { Link } from "@nextui-org/link";
+import { Icon } from "@iconify/react";
 import { Button } from "@nextui-org/button";
+import { Input } from "@nextui-org/input";
 
-
-
-export default function Component() {
+export default function Login() {
   const [isVisible, setIsVisible] = React.useState(false);
 
   const toggleVisibility = () => setIsVisible(!isVisible);
@@ -18,17 +15,20 @@ export default function Component() {
     <div className="flex h-full w-full items-center justify-center">
       <div className="flex w-full max-w-sm flex-col gap-4 rounded-large px-8 pb-10 pt-6">
         <p className="pb-4 text-left text-3xl font-semibold">
-          Log In
+          প্রবেশ করুন / Log In
           <span aria-label="emoji" className="ml-2" role="img">
             👋
           </span>
         </p>
-        <form className="flex flex-col gap-4" onSubmit={(e) => e.preventDefault()}>
+        <form
+          className="flex flex-col gap-4"
+          onSubmit={(e) => e.preventDefault()}
+        >
           <Input
-            label="Email"
+            label="ইমেইল / Email"
             labelPlacement="outside"
             name="email"
-            placeholder="Enter your email"
+            placeholder="ইমেইল লিখুন / Enter email here"
             type="email"
             variant="bordered"
           />
@@ -48,30 +48,22 @@ export default function Component() {
                 )}
               </button>
             }
-            label="Password"
+            label="পাসওয়ার্ড / Password"
             labelPlacement="outside"
             name="password"
-            placeholder="Enter your password"
+            placeholder="পাসওয়ার্ড লিখুন / Enter password here"
             type={isVisible ? "text" : "password"}
             variant="bordered"
           />
-          {/* <div className="flex items-center justify-between px-1 py-2">
-            <Checkbox defaultSelected name="remember" size="sm">
-              Remember me
-            </Checkbox>
-            <Link className="text-default-500" href="#" size="sm">
-              Forgot password?
-            </Link>
-          </div> */}
           <Button color="primary" type="submit">
-            Log In
+            প্রবেশ করুন / Log In
           </Button>
         </form>
-        <p className="text-center text-small">
+        {/* <p className="text-center text-small">
           <Link href="#" size="sm">
-            Create an account
+            পাসওয়ার্ড ভুলে গেছেন? / Forgot your password?
           </Link>
-        </p>
+        </p> */}
       </div>
     </div>
   );
