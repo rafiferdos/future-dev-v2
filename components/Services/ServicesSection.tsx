@@ -1,7 +1,7 @@
 
-
+'use client';
 import { Button } from "@nextui-org/button";
-import React from "react";
+import React, { useState } from "react";
 import service from "@/public/service.png";
 import Image from "next/image";
 import servicesData from "../../lib/servicesData";
@@ -16,6 +16,8 @@ type ServiceData = {
 };
 
 const ServicesSection: React.FC = () => {
+    const [learnMore, setLearnMore] = useState(3);
+    const [btn, setBtn] = useState(false);
   return (
     <div id="services">
       <div className="grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-5 gap-24">
@@ -54,14 +56,23 @@ const ServicesSection: React.FC = () => {
       <div>
         <div className="grid md:grid-cols-2 grid-cols-1  lg:grid-cols-3 gap-5 mt-28">
           {servicesData?.length > 0 &&
-            servicesData.map((data: ServiceData, index: number) => (
+            servicesData.slice(0,learnMore).map((data: ServiceData, index: number) => (
               <ServiceCard data={data} key={index} />
             ))}
         </div>
         <div className="flex items-center justify-center mt-10">
-          <Button color="primary" variant="ghost">
-            Read More
-          </Button>
+           {
+                    btn ? 
+                    <Button color="primary" variant="ghost" onClick={() => {
+                      setLearnMore(3)
+                      setBtn(!btn)
+                    }}>Show less</Button> 
+                    :
+                     <Button color="primary" variant="ghost" onClick={() => {
+                      setLearnMore(servicesData?.length)
+                      setBtn(!btn)
+                     }}>Show more</Button>
+                  }
         </div>
       </div>
     </div>
