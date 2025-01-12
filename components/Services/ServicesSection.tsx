@@ -1,6 +1,6 @@
 
 'use client';
-import { Button } from "@nextui-org/button";
+import { Button } from "@nextui-org/react";
 import React, { useState } from "react";
 import service from "@/public/service.png";
 import Image from "next/image";

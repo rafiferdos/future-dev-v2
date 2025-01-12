@@ -1,7 +1,8 @@
-import { Button } from '@nextui-org/button';
-import Link from 'next/link';
+"use client";
 import React from 'react'
-import { Input } from "@nextui-org/input";
+import { Button } from '@nextui-org/react';
+import Link from 'next/link';
+import { Input } from "@nextui-org/react";
 import { CiMail } from "react-icons/ci";
 
 

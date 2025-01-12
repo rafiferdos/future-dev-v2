@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Card, CardHeader, CardBody } from "@nextui-org/card";
-import { Button } from "@nextui-org/button";
+import { Button } from "@nextui-org/react";
 import { Avatar } from "@nextui-org/avatar";
 
 interface Data {
