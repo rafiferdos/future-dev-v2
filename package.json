@@ -6,7 +6,8 @@
 		"dev": "next dev --turbo",
 		"build": "next build",
 		"start": "next start",
-		"lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
+		"lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix",
+		"install": "npm install --legacy-peer-deps"
 	},
 	"dependencies": {
 		"@iconify/react": "^5.1.0",
