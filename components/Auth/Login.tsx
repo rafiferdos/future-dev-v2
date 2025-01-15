@@ -3,8 +3,8 @@
 import React from "react";
 
 import { Icon } from "@iconify/react";
-import { Button } from "@nextui-org/button";
-import { Input } from "@nextui-org/input";
+import { Button } from "@nextui-org/react";
+import { Input } from "@nextui-org/react";
 
 export default function Login() {
   const [isVisible, setIsVisible] = React.useState(false);

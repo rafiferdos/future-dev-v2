@@ -1,10 +1,10 @@
 "use client";
+import React from "react";
 
 import { Icon } from "@iconify/react";
-import { Button } from "@nextui-org/button";
-import { Input } from "@nextui-org/input";
-import { Link } from "@nextui-org/link";
-import React from "react";
+import { Button } from "@nextui-org/react";
+import { Input } from "@nextui-org/react";
+import { Link } from "@nextui-org/react";
 
 export default function Register() {
   const [isVisible, setIsVisible] = React.useState(false);

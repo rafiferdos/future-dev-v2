@@ -1,10 +1,10 @@
 "use client"
 import React from 'react'
-import { Link } from "@nextui-org/link";
-import { button as buttonStyles } from "@nextui-org/theme";
+import { Link } from "@nextui-org/react";
+import { button as buttonStyles } from "@nextui-org/react";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { Button } from "@nextui-org/button";
+import { Button } from "@nextui-org/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";

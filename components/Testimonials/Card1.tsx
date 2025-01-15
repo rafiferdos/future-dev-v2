@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import { Card, CardHeader, CardBody } from "@nextui-org/card";
+import { Card, CardHeader, CardBody } from "@nextui-org/react";
 
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
