@@ -1,8 +1,8 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import blogs from "../lib/blogData";
-import { Button } from "@nextui-org/button";
+import { Button } from "@nextui-org/react";
 
 // Define a type for blog data
 type Blog = {
@@ -13,6 +13,8 @@ type Blog = {
 };
 
 const BlogSection: React.FC = () => {
+  const [learnMore, setLearnMore] = useState(3);
+      const [btn, setBtn] = useState(false);
   return (
     <div id="blog" className="mt-96 md:mt-24">
       <div>
@@ -24,7 +26,7 @@ const BlogSection: React.FC = () => {
       {/*  */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {blogs?.length > 0 &&
-          blogs.map((blog: Blog, index: number) => (
+          blogs.slice(0,learnMore).map((blog: Blog, index: number) => (
             <div key={index} className="relative rounded-2xl border">
               <Image
                 className="w-full h-full opacity-60 rounded-2xl"
@@ -44,9 +46,18 @@ const BlogSection: React.FC = () => {
       </div>
       {/*  */}
       <div className="flex mt-12 justify-center items-center">
-        <Button color="primary" variant="shadow">
-          See More
-        </Button>
+      {
+                    btn ? 
+                    <Button color="primary" variant="ghost" onClick={() => {
+                      setLearnMore(3)
+                      setBtn(!btn)
+                    }}>Show less</Button> 
+                    :
+                     <Button color="primary" variant="ghost" onClick={() => {
+                      setLearnMore(blogs?.length)
+                      setBtn(!btn)
+                     }}>Show more</Button>
+                  }
       </div>
     </div>
   );
