@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import chooseUs from "../lib/chooseUs";
 import chooseUsImage from "@/public/chooseUse.png";

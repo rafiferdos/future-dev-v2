@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { IoPersonAddSharp } from "react-icons/io5";
 import {
@@ -7,10 +8,10 @@ import {
   NavbarBrand,
   NavbarItem,
 
-} from "@nextui-org/navbar";
-import { Button } from "@nextui-org/button";
-import { Link } from "@nextui-org/link";
-import { link as linkStyles } from "@nextui-org/theme";
+} from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
+import { Link } from "@nextui-org/react";
+import { link as linkStyles } from "@nextui-org/react";
 import NextLink from "next/link";
 import clsx from "clsx";
 

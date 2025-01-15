@@ -1,7 +1,8 @@
 "use client"
+import React from "react";
 
 import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { Tooltip } from "@nextui-org/tooltip";
+import { Tooltip } from "@nextui-org/react";
 import Logo from "@/public/logo.png";
 import FooterImage from "@/public/footer_image.png";
 import Image from "next/image";
